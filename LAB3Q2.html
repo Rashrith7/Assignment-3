@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 2</title>
+        <style>
+            /*2.1*/
+            .container1{
+                display: grid;
+                gap: 8px;
+                padding: 20px;
+                text-align: center;
+                background-color: white;
+            }
+            .container1>div{
+                background-color: lightgreen;
+                padding: 5px;
+                font-size: 15px;
+                text-align: center;
+                color: white;
+            }
+            .row1{
+                grid-column: span 3;
+            }
+            /*2.2*/
+            .container2{
+                display: grid;
+                gap: 1px;
+                padding: 0px;
+                text-align: center;
+                background-color: black;
+                border-left: 1px solid black;
+            }
+            .container2>div{
+                background-color: pink;
+                font-size: 15px;    
+                color: black;
+                font-weight: bold;            
+            }
+            .header{
+                grid-column: span 3;
+                padding: 10px;
+            }
+            .landing{
+                grid-column: span 3;
+                padding: 30px;
+            }
+            .box1{
+                grid-column: span 1;
+                padding: 10px;
+            }
+            /*2.3*/
+            .container3{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                border-left: 1px solid black;
+                text-align: center;
+                gap: 1px;
+                background-color: black;
+            }
+            .container3>div{
+                background-color: pink;
+                font-size: 15px;    
+                color: black;
+                font-weight: bold;   
+                text-align: center;         
+            }
+            .header1{
+                grid-column: span 2;
+                padding: 10px;
+            }
+            .footer{
+                grid-column: span 2;
+                padding: 5px;
+            }
+            .box {
+                padding: 40px;
+            }
+            /*2.4*/
+            .container4{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: auto 1fr;
+                border: 1px solid black;
+                gap: 1px;
+                background-color: black;
+                
+            }
+            .container4>div{
+                background-color: rgb(159, 250, 41);
+                font-size: 15px;
+                color: black;
+                font-weight: bold;
+                text-align: center;
+            }
+            .box2{
+                padding: 40px;
+            }
+            .header2{
+                grid-column: span 2;
+                padding: 10px;
+            }
+            .content2{
+                grid-row: span 2;
+            }
+            .side1{
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: grey; text-decoration: underline;">Question 2: Grid</h1>
+        <h2>2.1 Grid Layout</h2>
+        <div class="container1">
+            <div class="row1"><h2>1</h2></div>
+            <div class="row2"><h2>2</h2></div>
+            <div class="row2"><h2>3</h2></div>
+            <div class="row2"><h2>4</h2></div>
+            <div class="row3"><h2>5</h2></div>
+            <div class="row3"><h2>6</h2></div>
+            <div class="row3"><h2>7</h2></div>
+        </div>
+
+        <h2>2.2 Landing Page Layout</h2>
+        <div class="container2">
+            <div class="header">Header</div>
+            <div class="landing">Landing Page</div>
+            <div class="box1">About Us</div>
+            <div class="box1">Vision</div>
+            <div class="box1">Contact Us</div>
+        </div>
+
+        <h2>2.3 Layout with Sidebar</h2>
+        <div class="container3">
+            <div class="header1">Header</div>
+            <div class="box sidebar">Asidebar1</div>
+            <div class="box content">Main Content</div>
+            <div class="footer">Footer</div>
+        </div>
+
+        <h2>2.4 Grid Layout with Aside Sections</h2>
+        <div class="container4">
+            <div class="box2 header2">Header</div>
+            <div class="box2 content2">Left Main Content</div>
+            <div class="box2 side2">Aside2</div>
+            <div class="box2 side1">Aside1</div>
+        </div>
+    </body>
+</html>
